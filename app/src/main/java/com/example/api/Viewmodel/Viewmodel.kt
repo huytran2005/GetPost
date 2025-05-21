@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import java.io.IOException
 
-git class TaskUiState {
+sealed class TaskUiState {
     object Loading : TaskUiState()
     // Trạng thái thành công chứa danh sách các đối tượng postItem
     data class Success(val tasks: List<postItem>) : TaskUiState()

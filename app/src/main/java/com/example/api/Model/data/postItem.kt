@@ -1,8 +1,8 @@
 package com.example.api.Model.data
 
 data class postItem(
-    val body: String,
+    val userId: Int,
     val id: Int,
     val title: String,
-    val userId: Int
+    val body: String,
 )
